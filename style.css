@@ -14,7 +14,7 @@ body{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image:linear-gradient(to top left ,#343433 #797972 );
+    background-color: rgb(194, 172, 193);
 }
 
 
@@ -56,24 +56,41 @@ img{
         font-family: inherit;
         cursor: pointer;
     }
+    img{
+        margin-right:  1.5rem;
+        width: 4rem;
+    }
 }
 @media screen and(max-width : 764px ) {
     p{
         font-size: 2rem;
-        font-weight:500 ;
+        font-weight:600 ;
         font-family: inherit;
         cursor: pointer;
     }
     .container{
         display: grid;
         grid-template-columns: 1fr;
+
         max-height: 70rem;
         padding: 2rem;
     }
 }
-@media screen and(max-width : 560px ) {
-    
+
+@media screen and (max-width: 500px){
+    .container{
+        padding: 2.5rem;
+    }
+
+    p{
+        font-size: 2.5rem;
+        font-weight: 800 ;
+        font-family: inherit;
+        cursor: pointer;
+    }
+    img{
+        margin-right:  1.4rem;
+        width: 4rem;
+    }
 }
-/* @media screen and(max-width : 800px ) {
-    
-} */
+
