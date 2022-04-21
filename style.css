@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Baskerville'  sans-serif;
+    /* font-size: 65%; */
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(to top left ,#343433 #797972 );
+}
+
+
+.container{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: inherit;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    max-width: 80rem;
+    max-height: 70rem;
+    box-shadow: 1px 5px 15px rgb(73, 49, 49);
+    padding: 4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+
+p{
+    font-size: 4rem;
+    font-weight:600 ;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img{
+    margin-right:  2rem;
+    width: 5rem;
+}
+
+
+@media screen and(max-width : 900px ) {
+    p{
+        font-size: 3rem;
+        font-weight:500 ;
+        font-family: inherit;
+        cursor: pointer;
+    }
+}
+@media screen and(max-width : 764px ) {
+    p{
+        font-size: 2rem;
+        font-weight:500 ;
+        font-family: inherit;
+        cursor: pointer;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-height: 70rem;
+        padding: 2rem;
+    }
+}
+@media screen and(max-width : 560px ) {
+    
+}
+/* @media screen and(max-width : 800px ) {
+    
+} */
