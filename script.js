@@ -45,5 +45,13 @@ p.addEventListener("mousedown", function () {
   p.addEventListener("mousemove", onDrag);
 });
 p.addEventListener("mouseup", function () {
-  p.removeEventListener("mouseup", onDrag);
+  p.removeEventListener("mouseout", onDrag);
+});
+
+const styleOnContianer = getComputedStyle(container);
+
+console.log(styleOnContianer);
+
+document.querySelector(".container").addEventListener("click", function (e) {
+  console.log(e.target, e.currentTarget);
 });
